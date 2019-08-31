@@ -1,0 +1,7 @@
+D:\Code\CphB\BankServer\BankServer\bin\Debug\BankServer.exe.config
+D:\Code\CphB\BankServer\BankServer\bin\Debug\BankServer.exe
+D:\Code\CphB\BankServer\BankServer\bin\Debug\BankServer.pdb
+D:\Code\CphB\BankServer\BankServer\obj\Debug\BankServer.csprojAssemblyReference.cache
+D:\Code\CphB\BankServer\BankServer\obj\Debug\BankServer.csproj.CoreCompileInputs.cache
+D:\Code\CphB\BankServer\BankServer\obj\Debug\BankServer.exe
+D:\Code\CphB\BankServer\BankServer\obj\Debug\BankServer.pdb
