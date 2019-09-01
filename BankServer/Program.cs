@@ -25,9 +25,7 @@ namespace BankServer
             serverSocket.Start();
 
             Console.WriteLine("Server started");
-            while (_resetLoop)
-            {
-
+           
                 TcpClient connectionSocket = serverSocket.AcceptTcpClient();
                 //Socket connectionSocket = serverSocket.AcceptSocket();
                 Console.WriteLine("Server activated");
@@ -49,6 +47,11 @@ namespace BankServer
                     Console.WriteLine("Client: " + message);
                     if (message != null)
                     {
+                        if (message == "quit")
+                        {
+                            break;
+                        }
+
                         string[] splitmessage = message.Split(' ');
                         string sId = splitmessage[0];
                         int id = Int32.Parse(sId);
@@ -59,7 +62,7 @@ namespace BankServer
                         answer = CustomerLedger.Ledger[id].ToString();
                         sw.WriteLine(answer);
 
-                        break;
+                       
 
                     }
 
@@ -71,7 +74,7 @@ namespace BankServer
                 connectionSocket.Close();
                 
 
-            }
+            
 
 
         }
